@@ -1,0 +1,30 @@
+import math
+
+def combi (a,b):
+  if a>b:
+    large = a
+    small = b
+  elif a==b:
+    return 1
+  else:
+    large = b
+    small = a
+  anot = math.factorial(large-small)
+  large = math.factorial(large)
+  small = math.factorial(small)
+  
+  ans = large / (small*anot)
+  ans = int(ans)
+
+  return ans
+
+
+numbers = [1,2,3,4,5]
+target = 11
+if (sum(numbers)-target)%2 == 0:
+  print("됨")
+  sub_target = (sub(numbers)-target)/2
+else:
+  print("안됨")
+
+
