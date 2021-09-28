@@ -24,7 +24,10 @@ target = 11
 if (sum(numbers)-target)%2 == 0:
   print("됨")
   sub_target = (sub(numbers)-target)/2
+elif: (sum(numbers)-target)%2 != 0:
+  print("업뎃된 내용")
 else:
   print("안됨")
+
 
 
